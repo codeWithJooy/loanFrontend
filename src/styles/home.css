@@ -1,0 +1,128 @@
+.offerMain{
+    width:100%;
+    height:100vh;
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    overflow-y: auto;
+    background-color: #f0f3f8;
+  }
+  .offerHeader{
+    width:100%;
+    padding: 10px;
+    background-color: #8665F2;
+    border-bottom-left-radius: 40px;
+  }
+  .offerTitle{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .offerTitle p{
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .offerSubtitle{
+    width:80%;
+    margin-left: 10%;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .offerSubtitle p{
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .offerSectionContainer{
+    width:100%;
+    padding:10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .offerUnit{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #34DFB8;
+    margin-bottom: 10px;
+  }
+  .offerUnit p{
+   font-size: 14px;
+   font-weight: bold;
+   color:#fff;
+  }
+
+  .offerUnitActive{
+    width:120px;
+    height:120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8665F2;
+    margin-bottom: 10px;
+  }
+  .offerUnitActive p{
+    font-size: 18px;
+    font-weight: bold;
+    color:#fff;
+  }
+  .offerDetails{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .offerCard{
+    width:80%;
+    border:1px solid #34DFB8;
+    border-radius: 5px;
+    border-top-right-radius: 30px;
+    background-color: #fff;
+  }
+  .offerCardTitle{
+    width:100%;
+    padding:15px;
+    text-align: center;
+  }
+  .offerCardMisc{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5px 10px;
+  }
+  .offerCardMiscTitle{
+    width:60%;
+    text-align: center;
+    padding:0px 5px;
+  }
+  .offerCardMiscValue{
+    width:40%;
+    text-align: center;
+    padding:0px 5px;
+  }
+  .offerAccept{
+    width:100%;
+    margin-top: 10px;
+  }
+  .offerAccept button{
+    width:100%;
+    padding:10px;
+    background-color: #8665F2;
+    color:#fff;
+    font-size: 15px;
+    font-weight: bold;
+    border:none;
+    outline:none;
+  }
