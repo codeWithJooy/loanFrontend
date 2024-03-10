@@ -40,11 +40,12 @@
   }
   .offerSectionContainer{
     width:100%;
-    padding:10px 20px;
+    padding:20px 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 150px;
   }
   .offerUnit{
     width:80px;
@@ -89,23 +90,36 @@
     border-radius: 5px;
     border-top-right-radius: 30px;
     background-color: #fff;
+    padding:10px 0px;
   }
   .offerCardTitle{
     width:100%;
     padding:15px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid lightgray;
+  }
+  .offerCardTitle p{
+    font-size: 16px;
+    font-weight: bold;
   }
   .offerCardMisc{
     width:100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:5px 10px;
+    padding:6px 10px;
   }
   .offerCardMiscTitle{
     width:60%;
     text-align: center;
     padding:0px 5px;
+  }
+  .offerCardMiscTitle{
+    font-size: 13px;
+    font-weight: bold;
   }
   .offerCardMiscValue{
     width:40%;
@@ -118,7 +132,7 @@
   }
   .offerAccept button{
     width:100%;
-    padding:10px;
+    padding:12px 10px;
     background-color: #8665F2;
     color:#fff;
     font-size: 15px;

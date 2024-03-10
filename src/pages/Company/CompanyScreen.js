@@ -2,8 +2,13 @@ import React from "react";
 import "../../styles/global.css";
 import "../../styles/number.css";
 import Header from "../../components/Header/Header";
-
+import { useHistory } from "react-router-dom";
 const CompanyScreen = () => {
+  const history=useHistory()
+
+  const handleProceed=()=>{
+     history.push("/education")
+  }
   return (
     <div className="main">
       <Header title="Company Details" img="Assets/back.png" />
@@ -81,7 +86,7 @@ const CompanyScreen = () => {
               </div>
             </div>
             <div className="proceedSection">
-              <button>Proceed</button>
+              <button onClick={handleProceed}>Proceed</button>
             </div>
           </div>
         </div>

@@ -2,8 +2,14 @@ import React from "react";
 import "../../styles/global.css";
 import "../../styles/number.css";
 import Header from "../../components/Header/Header";
+import {useHistory} from 'react-router-dom' 
 
 const IdentifyScreen = () => {
+  const history=useHistory()
+
+  const handleProceed=()=>{
+     history.push("/current")
+  }
   return (
     <div className="main">
       <Header title="Identify Yourself" img="Assets/back.png" />
@@ -27,7 +33,7 @@ const IdentifyScreen = () => {
               </div>
             </div>
             <div className="proceedSection">
-              <button>Proceed</button>
+              <button onClick={handleProceed}>Proceed</button>
             </div>
           </div>
         </div>

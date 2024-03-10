@@ -2,8 +2,14 @@ import React from "react";
 import "../../styles/global.css";
 import "../../styles/number.css";
 import Header from "../../components/Header/Header";
+import { useHistory } from "react-router-dom";
 
 const CurrentAddress = () => {
+  const history=useHistory()
+
+  const handleProceed=()=>{
+     history.push("/permanent")
+  }
   return (
     <div className="main">
       <Header title="Current Address" img="Assets/back.png" />
@@ -52,7 +58,7 @@ const CurrentAddress = () => {
               </div>
             </div>
             <div className="proceedSection">
-              <button>Proceed</button>
+              <button onClick={handleProceed}>Proceed</button>
             </div>
           </div>
         </div>

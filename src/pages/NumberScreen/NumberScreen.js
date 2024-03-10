@@ -2,8 +2,14 @@ import React from 'react'
 import "../../styles/global.css"
 import "../../styles/number.css"
 import Header from '../../components/Header/Header'
+import {useHistory} from 'react-router-dom' 
 
 const NumberScreen=()=>{
+    const history=useHistory()
+
+    const handleProceed=()=>{
+       history.push("/personal")
+    }
     return(
         <div className='main'>
             <Header />
@@ -28,7 +34,7 @@ const NumberScreen=()=>{
                     </div>
                 </div>
                 <div className='proceedSection'>
-                    <button>Proceed</button>
+                    <button onClick={handleProceed}>Proceed</button>
                 </div>
              </div>
           </div>

@@ -1,8 +1,14 @@
 import React from 'react'
 import "../../styles/home.css";
 import "../../styles/number.css";
+import {useHistory} from 'react-router-dom' 
 
 const Offer=()=>{
+    const history=useHistory()
+
+    const handleProceed=()=>{
+       history.push("/identify")
+    }
     return(
         <div className='offerMain'>
           <div className='offerHeader'>
@@ -28,6 +34,15 @@ const Offer=()=>{
             <div className='offerUnit'>
                 <p>Rs 5000</p>
             </div>
+            <div className='offerUnit'>
+                <p>Rs 5000</p>
+            </div>
+            <div className='offerUnit'>
+                <p>Rs 5000</p>
+            </div>
+            <div className='offerUnit'>
+                <p>Rs 5000</p>
+            </div>
           </div>
           <div className='offerDetails'>
             <div className='offerCard'>
@@ -36,7 +51,7 @@ const Offer=()=>{
                 </div>
                 <div className='offerCardMisc'>
                     <div className='offerCardMiscTitle'>
-                        <p>Monthly INterest 2%</p>
+                        <p>Monthly Interest 2%</p>
                     </div>
                     <div className='offerCardMiscValue'>
                         <p>Rs 200</p>
@@ -44,14 +59,14 @@ const Offer=()=>{
                 </div>
                 <div className='offerCardMisc'>
                     <div className='offerCardMiscTitle'>
-                        <p>Monthly INterest 2%</p>
+                        <p>Monthly Payment</p>
                     </div>
                     <div className='offerCardMiscValue'>
                         <p>Rs 200</p>
                     </div>
                 </div>
                 <div className='offerAccept'>
-                    <button>Apply For This</button>
+                    <button onClick={handleProceed}>Apply Loan</button>
                 </div>
             </div>
           </div>
