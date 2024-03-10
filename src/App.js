@@ -8,6 +8,7 @@ import CurrentAddress from "./pages/Address/CurrentAddress";
 import CompanyScreen from "./pages/Company/CompanyScreen";
 import Education from "./pages/Education/Education";
 import Offer from "./pages/Home/Offer";
+import Toasty from "./components/Toasty/Toasty"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/company" component={CompanyScreen} />
         <Route path="/education" component={Education} />
       </Switch>
+      <Toasty />
     </BrowserRouter>
   );
 }

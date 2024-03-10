@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/global.css";
 import "../../styles/number.css";
 import Header from "../../components/Header/Header";
-import {useHistory} from 'react-router-dom' 
+import { useHistory } from 'react-router-dom'
 
 const PersonalScreen = () => {
-  const history=useHistory()
+  const [email, setEmail] = useState("");
+  const [showReEnterEmail, setShowReEnterEmail] = useState(false);
+  const history = useHistory();
 
-    const handleProceed=()=>{
-       history.push("/offer")
-    }
+  const handleProceed = () => {
+    history.push("/offer");
+  };
+
+  const handleEmailFocus = () => {
+    setShowReEnterEmail(true);
+  };
+
   return (
     <div className="main">
       <Header title="Add Personal Details" />
@@ -37,24 +44,25 @@ const PersonalScreen = () => {
                 <label>Add Email</label>
               </div>
               <div className="inputText">
-                <input type="text" />
+                <input type="text" onChange={(e) => setEmail(e.target.value)} onFocus={handleEmailFocus} />
               </div>
             </div>
-            <div className="inputSection">
-              <div className="inputLabel">
-                <label>ReEnter Email</label>
+            {showReEnterEmail &&
+              <div className="inputSection">
+                <div className="inputLabel">
+                  <label>ReEnter Email</label>
+                </div>
+                <div className="inputText">
+                  <input type="text" />
+                </div>
               </div>
-              <div className="inputText">
-                <input type="text" />
-              </div>
-            </div>
-
+            }
             <div className="inputSection">
               <div className="inputLabel">
                 <label>Date Of Birth </label>
               </div>
               <div className="inputText">
-                <input type="text" />
+                <input type="date" />
               </div>
             </div>
             <div className="proceedSection">
@@ -68,3 +76,4 @@ const PersonalScreen = () => {
 };
 
 export default PersonalScreen;
+
